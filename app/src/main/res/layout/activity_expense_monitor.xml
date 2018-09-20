@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExpenseMonitor">
+
+    <TextView
+        android:id="@+id/expenseTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Expenses:"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/expenses"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/expenseTitle">
+    </ListView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addExp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/expenses"
+        android:layout_alignParentRight="true"
+        app:fabCustomSize="60dp"
+        android:elevation="10dp"
+        android:src="@drawable/add"
+        android:scaleType="center"
+        app:maxImageSize="60dp"
+        />
+
+
+    <TextView
+        android:id="@+id/totalTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Expenses:"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_below="@id/expenses"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalTitle"/>
+    <TextView
+        android:id="@+id/budgetTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remaining Budget:"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_below="@id/total"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/budget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/budgetTitle"/>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

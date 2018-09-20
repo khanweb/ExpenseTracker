@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.card.MaterialCardView
+        android:id="@+id/expCard"
+        android:layout_width="375dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="10dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/expTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Title"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="#000"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/expAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="140dp"
+            android:gravity="center_vertical"
+            android:text="Amount:"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/expMoney"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:text="$10000"
+            android:textColor="#42f4a1"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingRight="20dp"/>
+
+
+
+    </android.support.design.card.MaterialCardView>
+
+
+</RelativeLayout>
